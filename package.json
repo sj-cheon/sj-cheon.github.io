@@ -1,16 +1,19 @@
 {
-  "name": "sj-cheon.github.io",
+  "name": "@sj-cheon/sj-cheon.github.io",
   "version": "1.0.0",
   "description": "mobile.wedding.invitation",
   "main": "index.js",
   "scripts": {
-    "test": "exit 0"
+    "test": "exit 0",
+    "start": "electron .",
+    "dist": "electron-builder",
+    "dist:win": "electron-builder --win"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sj-cheon/sj-cheon.github.io.git"
+    "url": "git+https://github.com/sj-cheon/sj-cheon.github.io.git"
   },
-  "author": "",
+  "author": "sj.cheon",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sj-cheon/sj-cheon.github.io/issues"
@@ -18,5 +21,14 @@
   "publishConfig": {
     "sj-cheon:registry": "https://npm.pkg.github.com"
   },
-  "homepage": "https://github.com/sj-cheon/sj-cheon.github.io#readme"
+  "homepage": "https://github.com/sj-cheon/sj-cheon.github.io#readme",
+  "devDependencies": {
+    "electron": "^28.1.1",
+    "electron-builder": "^24.9.1"
+  },
+  "dependencies": {
+  },
+  "nsis": {
+    "packElevateHelper": false    
+  }
 }
